@@ -1,0 +1,97 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(imagenes/fondo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  background-image: url(imagenes/banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 100vw;
+}
+
+#logo {
+  height: 100px;
+  padding: 2rem;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 350px;
+  background-color: rgb(216, 119, 77);
+  margin: 3rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  gap: .5rem;
+}
+
+.pantalla {
+  grid-column: 1 / -1;
+  background-color: rgb(40, 33, 33);
+  padding:1.5rem;
+  border-radius: 1rem;
+  font-family: monospace;
+  color: white;
+  font-size: 2rem;
+  text-align: right;
+  font-weight: 600;
+}
+
+.btn {
+  background-color: white;
+  border-radius: .5rem;
+  padding: 1.5rem;
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: rgb(237, 184, 123);
+}
+
+#cero {
+  grid-column: span 2;
+}
+
+#igual {
+  background-color: goldenrod;
+  grid-row: span 2;
+}
+
+#igual:hover{
+  background-color: rgb(232, 194, 97);
+}
